@@ -9,7 +9,7 @@ weatherForm.onsubmit = e => {
 
     locationMsg.textContent = forecastMsg.textContent = 'Loading...'
 
-    fetch('http://localhost:3030/weather?location=' + location)
+    fetch('/weather?location=' + location)
     .then(rsp => {
         rsp.json()
             .then(data => {
