@@ -18,8 +18,9 @@ weatherForm.onsubmit = e => {
                     console.log(data.error)
                 } else {
                     locationMsg.textContent = data.location
-                    forecastMsg.textContent = 'It is ' + data.weatherDesc[0].toLowerCase() + '. The current temperature is ' + 
-                        data.temperature + '\u00B0F. It feels like ' + data.feelsLike + '\u00B0F.'
+                    forecastMsg.textContent = 'It is ' + data.weatherDesc[0].toLowerCase() + ' with winds at ' + data.windSpeed + ' to the ' + data.windDir +
+                        ' . The current temperature is ' + data.temperature + '\u00B0F. It feels like ' + data.feelsLike + '\u00B0F. The humidity is ' + 
+                        data.humidity + '%.'
                 }
             })
     })

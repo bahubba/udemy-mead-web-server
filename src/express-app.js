@@ -83,7 +83,7 @@ app.get('/weather', (req,rsp) => {
         }
 
         // Generate forecast
-        forecast(lat, lon, (error, {weather_descriptions: weatherDesc, temperature, feelslike: feelsLike, errTxt}) => {
+        forecast(lat, lon, (error, { weather_descriptions: weatherDesc, wind_dir: windDir, wind_speed: windSpeed, humidity, temperature, feelslike: feelsLike, errTxt}) => {
             if(error) {
                 return rsp.send({
                     error: 'Unable to get forecast',
@@ -96,6 +96,9 @@ app.get('/weather', (req,rsp) => {
             rsp.send({
                 location,
                 weatherDesc,
+                windDir,
+                windSpeed,
+                humidity,
                 temperature,
                 feelsLike
             })
