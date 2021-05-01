@@ -24,10 +24,3 @@ weatherForm.onsubmit = e => {
             })
     })
 }
-
-/*
-"It is " + weatherDesc[0].toLowerCase() + ". The current temperature is " + chalk.green.bold(temperature 
-            + "\u00B0F") + " (" + chalk.yellow.bold(((temperature - 32) / 1.8).toFixed(2) + "\u00B0C") + "). "
-            + "It feels like " + chalk.green.bold(feelsLike + "\u00B0F") + " ("
-            + chalk.yellow.bold(((feelsLike - 32) / 1.8).toFixed(2) + "\u00B0C") + ")."
-*/
