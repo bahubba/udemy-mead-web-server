@@ -5,13 +5,13 @@
   "main": "express-app.js",
   "scripts": {
     "start": "node src/express-app.js",
-    "dev-start": "nodemon src/express-app.js -e js,hbs,css"
+    "dev-start": "nodemon src/express-app.js -e js,hbs,css",
+    "deploy": "eb deploy udemy-mead-web-server-env"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-amplify": "^3.3.27",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "hbs": "^4.1.2",
